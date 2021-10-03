@@ -18,7 +18,7 @@ module.exports.sortFileWithOrderBy = async (folderPath, folderFiles, orderBy, or
         && (orderByDirection === "Descending" || orderByDirection === "Ascending");
 
     if (!isOrderInputVaild) return folderFiles;
-
+    console.log(`Path: ${folderPath} \nFiles: ${folderFiles}`);
     console.log(`Order By ${orderBy} and direction is ${orderByDirection}`);
     let fileInformationArray = [];
 
